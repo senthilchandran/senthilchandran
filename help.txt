@@ -1,0 +1,25 @@
+ES5
+///<reference path="../app.ts" />
+import app = require("../app");
+app.senthilchandran.controller("homeCtrl", ["$scope",($scope)=>{}]);
+
+,resolve: {
+                load: ["$q", "$rootScope",  ($q, $rootScope)=> {
+                    var defer = $q.defer();
+                    require(["controllers/about.js"], () => {
+                        defer.resolve();
+                        $rootScope.$apply();
+                    });
+                    return defer.promise;
+                }]
+            }
+
+var defer = $q.defer();
+                    require(["controllers/about.js"], () => {
+                        defer.resolve();
+                        $rootScope.$apply();
+                    });
+                    return defer.promise;
+
+senthil: s9Cpz_55
+            

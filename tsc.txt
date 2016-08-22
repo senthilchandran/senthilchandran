@@ -1,0 +1,3 @@
+--experimentalDecorators --moduleResolution node --module amd --target ES6
+
+http-server

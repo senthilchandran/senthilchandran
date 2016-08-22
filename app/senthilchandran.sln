@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SenthilChandran", "SenthilChandran", "{454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}"
+	ProjectSection(SolutionItems) = preProject
+		app.ts = app.ts
+		index.html = index.html
+		main.ts = main.ts
+		tsconfig.json = tsconfig.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "controllers", "controllers", "{3AA5A978-A282-4D4C-AB59-0102E0169FBC}"
+	ProjectSection(SolutionItems) = preProject
+		controllers\about.ts = controllers\about.ts
+		controllers\home.ts = controllers\home.ts
+		controllers\profession.ts = controllers\profession.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{7CC1E2E4-0C41-4FBE-A2D1-453CE9C0F95D}"
+	ProjectSection(SolutionItems) = preProject
+		css\main.css = css\main.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libraries", "libraries", "{EF507203-E511-4CDD-9D36-AA843966FE7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bootstrap", "bootstrap", "{B09557D1-5EE3-438B-B586-587DAFE206F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{1612ED2B-7E40-4020-856C-ACCCDA6FC03E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "img", "img", "{145E312F-578D-44DE-9571-D212CC13E60F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{F7A6C61F-57CD-4DA4-B0AA-E6D91E299A7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "typings", "typings", "{67A36A46-E36F-4CD7-AE05-13DF91C0D508}"
+	ProjectSection(SolutionItems) = preProject
+		typings\angular-route.d.ts = typings\angular-route.d.ts
+		typings\angular.d.ts = typings\angular.d.ts
+		typings\jquery.d.ts = typings\jquery.d.ts
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "views", "views", "{6ABC2BA8-3599-4E5B-BAEF-C5D83DFB7C1D}"
+	ProjectSection(SolutionItems) = preProject
+		views\about.html = views\about.html
+		views\home.html = views\home.html
+		views\profession.html = views\profession.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{47F3A671-7857-4732-8F3D-4365A430A1CD}"
+	ProjectSection(SolutionItems) = preProject
+		services\facebookService.ts = services\facebookService.ts
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3AA5A978-A282-4D4C-AB59-0102E0169FBC} = {454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}
+		{7CC1E2E4-0C41-4FBE-A2D1-453CE9C0F95D} = {454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}
+		{EF507203-E511-4CDD-9D36-AA843966FE7F} = {454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}
+		{B09557D1-5EE3-438B-B586-587DAFE206F1} = {EF507203-E511-4CDD-9D36-AA843966FE7F}
+		{1612ED2B-7E40-4020-856C-ACCCDA6FC03E} = {B09557D1-5EE3-438B-B586-587DAFE206F1}
+		{145E312F-578D-44DE-9571-D212CC13E60F} = {B09557D1-5EE3-438B-B586-587DAFE206F1}
+		{F7A6C61F-57CD-4DA4-B0AA-E6D91E299A7F} = {B09557D1-5EE3-438B-B586-587DAFE206F1}
+		{67A36A46-E36F-4CD7-AE05-13DF91C0D508} = {454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}
+		{6ABC2BA8-3599-4E5B-BAEF-C5D83DFB7C1D} = {454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}
+		{47F3A671-7857-4732-8F3D-4365A430A1CD} = {454FA1D8-1C8A-458A-AE5B-3FB43F3308A9}
+	EndGlobalSection
+EndGlobal

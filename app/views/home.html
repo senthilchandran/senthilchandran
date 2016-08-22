@@ -1,0 +1,21 @@
+<div class="row">
+    <div>
+        <uib-carousel active="0" interval="3000" no-wrap="false">
+            <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                <img ng-src="{{slide.image}}" class="carousel-image">
+            </uib-slide>
+        </uib-carousel>
+    </div>
+    <div>
+        <div class="col-md-4 bike">
+            <div class="bike-content">
+                <h2 class="about-title">Hello!</h2>
+                <h4 class="p-t-20">I am a Software Engineer for living! Web development is my passion, but I have done full-stack development.</h4>
+                <h4 class="p-t-20">On personal front, proud new dad with passion for outdoors and people.</h4>
+                <div class="tac"><a class="btn btn-default btn-about-me" href="#/about">More about me!</a></div>
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
