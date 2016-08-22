@@ -3,7 +3,7 @@ define(["require", "exports", "../app"], function (require, exports, app_1) {
     var controllers;
     (function (controllers) {
         app_1.senthilchandran.controller("homeCtrl", ["$scope",
-                ($scope) => {
+            function ($scope) {
                 $scope.slides = [];
                 $scope.slides.push({
                     image: "http://www.senthilchandran.com/content/IngrahamFlats.jpg",

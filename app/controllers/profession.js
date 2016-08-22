@@ -3,7 +3,7 @@ define(["require", "exports", "../app"], function (require, exports, app_1) {
     var controllers;
     (function (controllers) {
         app_1.senthilchandran.register.controller("professionCtrl", ["$scope",
-                ($scope) => {
+            function ($scope) {
                 $scope.title = "Profession";
             }
         ]);

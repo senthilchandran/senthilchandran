@@ -18,8 +18,8 @@ var requireconfig = {
     waitSeconds: 100
 };
 require.config(requireconfig);
-(() => {
-    require([config.app, config.controllers.home], () => {
+(function () {
+    require([config.app, config.controllers.home], function () {
         angular.bootstrap(document, [config.appName]);
     });
 })();

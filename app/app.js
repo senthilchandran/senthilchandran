@@ -5,15 +5,15 @@ define(["require", "exports"], function (require, exports) {
         "ngRoute",
         "ui.bootstrap"
     ]);
-    var loadDependencies = ($q, $rootScope, dependencies) => {
+    var loadDependencies = function ($q, $rootScope, dependencies) {
         var defer = $q.defer();
-        require(dependencies, () => {
+        require(dependencies, function () {
             defer.resolve();
             $rootScope.$apply();
         });
         return defer.promise;
     };
-    exports.senthilchandran.config(["$routeProvider", "$controllerProvider", ($routeProvider, $controllerProvider) => {
+    exports.senthilchandran.config(["$routeProvider", "$controllerProvider", function ($routeProvider, $controllerProvider) {
             exports.senthilchandran.register = {
                 controller: $controllerProvider.register
             };
@@ -24,7 +24,7 @@ define(["require", "exports"], function (require, exports) {
                 templateUrl: "views/about.html",
                 controller: "aboutCtrl",
                 resolve: {
-                    load: ["$q", "$rootScope", ($q, $rootScope) => {
+                    load: ["$q", "$rootScope", function ($q, $rootScope) {
                             return loadDependencies($q, $rootScope, ["controllers/about.js"]);
                         }]
                 }
@@ -32,7 +32,7 @@ define(["require", "exports"], function (require, exports) {
                 templateUrl: "views/profession.html",
                 controller: "professionCtrl",
                 resolve: {
-                    load: ["$q", "$rootScope", ($q, $rootScope) => {
+                    load: ["$q", "$rootScope", function ($q, $rootScope) {
                             return loadDependencies($q, $rootScope, ["controllers/profession.js"]);
                         }]
                 }
@@ -41,6 +41,6 @@ define(["require", "exports"], function (require, exports) {
                 redirectTo: "/"
             });
         }]);
-    exports.senthilchandran.run(["$rootScope", "$window", ($rootScope, $window) => {
+    exports.senthilchandran.run(["$rootScope", "$window", function ($rootScope, $window) {
         }]);
 });
