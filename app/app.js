@@ -13,9 +13,10 @@ define(["require", "exports"], function (require, exports) {
         });
         return defer.promise;
     };
-    exports.senthilchandran.config(["$routeProvider", "$controllerProvider", function ($routeProvider, $controllerProvider) {
+    exports.senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvider", function ($routeProvider, $controllerProvider, $compileProvider) {
             exports.senthilchandran.register = {
-                controller: $controllerProvider.register
+                controller: $controllerProvider.register,
+                directive: $compileProvider.directive
             };
             $routeProvider.when("/", {
                 templateUrl: "views/home.html",

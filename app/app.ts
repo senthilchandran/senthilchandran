@@ -3,6 +3,7 @@
 export interface ISenthilChandran extends ng.IModule {
     register: {
         controller: (...args: any[]) => ng.IControllerProvider;
+        directive: (...args: any[]) => ng.ICompileProvider;
     }
 }
 
@@ -20,10 +21,10 @@ var loadDependencies = ($q, $rootScope, dependencies): any => {
     return defer.promise;
 };
 
-senthilchandran.config(["$routeProvider", "$controllerProvider", ($routeProvider, $controllerProvider) => {
-
+senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvider", ($routeProvider, $controllerProvider, $compileProvider) => {
     senthilchandran.register = {
-        controller: $controllerProvider.register
+        controller: $controllerProvider.register,
+        directive: $compileProvider.directive
     };
 
     $routeProvider.when("/", {

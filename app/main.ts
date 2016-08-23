@@ -9,7 +9,7 @@ var config = {
     serviceConfig: "",
     controllers: { home: "controllers/home" },
     services: {},
-    directives: {},
+    directives: { nav: "directives/nav"},
     filters: {},
     ngConstant: { $scope: "$scope" },
     libs: {}
@@ -23,7 +23,7 @@ var requireconfig = {
 require.config(requireconfig);
 
 (() => {
-    require([config.app, config.controllers.home],
+    require([config.app, config.controllers.home, config.directives.nav],
     () => {
         angular.bootstrap(document, [config.appName]);
     });
