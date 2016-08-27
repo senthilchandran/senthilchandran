@@ -1,5 +1,7 @@
 /// <reference path="main.ts" />
 
+declare var requireConfig;
+
 export interface ISenthilChandran extends ng.IModule {
     register: {
         controller: (...args: any[]) => ng.IControllerProvider;
@@ -28,10 +30,10 @@ senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvid
     };
 
     $routeProvider.when("/", {
-            templateUrl: "views/home.html",
+            templateUrl: "views/home.html?" + requireconfig.version,
             controller: "homeCtrl"
         }).when("/about", {
-            templateUrl: "views/about.html",
+            templateUrl: "views/about.html?" + requireconfig.version,
             controller: "aboutCtrl",
             resolve: {
                 load: ["$q", "$rootScope",  ($q, $rootScope)=> {
@@ -39,7 +41,7 @@ senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvid
                 }]
             }
         }).when("/profession", {
-            templateUrl: "views/profession.html",
+            templateUrl: "views/profession.html?" + requireconfig.version,
             controller: "professionCtrl",
         resolve: {
             load: ["$q", "$rootScope",  ($q, $rootScope)=> {
