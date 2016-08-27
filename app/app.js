@@ -19,10 +19,10 @@ define(["require", "exports"], function (require, exports) {
                 directive: $compileProvider.directive
             };
             $routeProvider.when("/", {
-                templateUrl: "views/home.html?" + requireconfig.version,
+                templateUrl: "views/home.html?" + requireconfig.urlArgs,
                 controller: "homeCtrl"
             }).when("/about", {
-                templateUrl: "views/about.html?" + requireconfig.version,
+                templateUrl: "views/about.html?" + requireconfig.urlArgs,
                 controller: "aboutCtrl",
                 resolve: {
                     load: ["$q", "$rootScope", function ($q, $rootScope) {
@@ -30,7 +30,7 @@ define(["require", "exports"], function (require, exports) {
                         }]
                 }
             }).when("/profession", {
-                templateUrl: "views/profession.html?" + requireconfig.version,
+                templateUrl: "views/profession.html?" + requireconfig.urlArgs,
                 controller: "professionCtrl",
                 resolve: {
                     load: ["$q", "$rootScope", function ($q, $rootScope) {

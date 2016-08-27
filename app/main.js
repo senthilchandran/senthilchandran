@@ -16,7 +16,7 @@ var config = {
 var requireconfig = {
     baseUrl: ".",
     waitSeconds: 100,
-    version: "v0-8262016"
+    urlArgs: "v0-8262016"
 };
 require.config(requireconfig);
 (function () {
