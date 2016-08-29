@@ -10,10 +10,12 @@ define(["require", "exports", "../app"], function (require, exports, app_1) {
                         $(e.target).parent().toggleClass("active");
                     });
                     //change active nav bar item based url
-                    if ($location.path() && $location.path().length > 1) {
-                        element.find("li.active").toggleClass("active");
-                        element.find('li > a[href$="' + $location.path() + '"]').parent().toggleClass("active");
-                    }
+                    scope.$on("$routeChangeSuccess", function () {
+                        if ($location.path() && $location.path().length > 0) {
+                            element.find("li.active").toggleClass("active");
+                            element.find('li > a[href$="' + $location.path() + '"]').parent().toggleClass("active");
+                        }
+                    });
                 };
                 return {
                     link: linkFunction

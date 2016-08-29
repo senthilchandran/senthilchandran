@@ -11,7 +11,8 @@ export interface ISenthilChandran extends ng.IModule {
 
 export var senthilchandran = <ISenthilChandran> angular.module("senthilchandran", [
     "ngRoute",
-    "ui.bootstrap"
+    "ui.bootstrap",
+    "ngAnimate"
 ]);
 
 var loadDependencies = ($q, $rootScope, dependencies): any => {
@@ -30,10 +31,10 @@ senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvid
     };
 
     $routeProvider.when("/", {
-            templateUrl: "views/home.html?" + requireconfig.urlArgs,
+            templateUrl: "views/home.html?" + requireConfig.urlArgs,
             controller: "homeCtrl"
         }).when("/about", {
-            templateUrl: "views/about.html?" + requireconfig.urlArgs,
+            templateUrl: "views/about.html?" + requireConfig.urlArgs,
             controller: "aboutCtrl",
             resolve: {
                 load: ["$q", "$rootScope",  ($q, $rootScope)=> {
@@ -41,7 +42,7 @@ senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvid
                 }]
             }
         }).when("/profession", {
-            templateUrl: "views/profession.html?" + requireconfig.urlArgs,
+            templateUrl: "views/profession.html?" + requireConfig.urlArgs,
             controller: "professionCtrl",
         resolve: {
             load: ["$q", "$rootScope",  ($q, $rootScope)=> {

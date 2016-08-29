@@ -1,8 +1,8 @@
 import { senthilchandran } from "../app";
 
 export module controllers {
-    senthilchandran.controller("homeCtrl", ["$scope",
-        ($scope) => {
+    senthilchandran.controller("homeCtrl", ["$scope", "$uibModal",
+        ($scope, $uibModal) => {
             $scope.slides = [];
             $scope.slides.push({
                     image: "http://www.senthilchandran.com/content/IngrahamFlats.jpg",
@@ -16,6 +16,13 @@ export module controllers {
                     image: "http://www.senthilchandran.com/content/LakeLouise.jpg",
                     id: 2
                 });
+            
+            $scope.modalInstance = null;
+            $scope.showMiracleModal = () => {
+                $scope.modalInstance = $uibModal.open({
+                    templateUrl: "/views/templates/miracle.html"
+                });
+            }
         }
     ]);
 }

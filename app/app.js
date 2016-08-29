@@ -3,7 +3,8 @@ define(["require", "exports"], function (require, exports) {
     "use strict";
     exports.senthilchandran = angular.module("senthilchandran", [
         "ngRoute",
-        "ui.bootstrap"
+        "ui.bootstrap",
+        "ngAnimate"
     ]);
     var loadDependencies = function ($q, $rootScope, dependencies) {
         var defer = $q.defer();
@@ -19,10 +20,10 @@ define(["require", "exports"], function (require, exports) {
                 directive: $compileProvider.directive
             };
             $routeProvider.when("/", {
-                templateUrl: "views/home.html?" + requireconfig.urlArgs,
+                templateUrl: "views/home.html?" + requireConfig.urlArgs,
                 controller: "homeCtrl"
             }).when("/about", {
-                templateUrl: "views/about.html?" + requireconfig.urlArgs,
+                templateUrl: "views/about.html?" + requireConfig.urlArgs,
                 controller: "aboutCtrl",
                 resolve: {
                     load: ["$q", "$rootScope", function ($q, $rootScope) {
@@ -30,7 +31,7 @@ define(["require", "exports"], function (require, exports) {
                         }]
                 }
             }).when("/profession", {
-                templateUrl: "views/profession.html?" + requireconfig.urlArgs,
+                templateUrl: "views/profession.html?" + requireConfig.urlArgs,
                 controller: "professionCtrl",
                 resolve: {
                     load: ["$q", "$rootScope", function ($q, $rootScope) {

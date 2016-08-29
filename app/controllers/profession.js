@@ -4,7 +4,6 @@ define(["require", "exports", "../app"], function (require, exports, app_1) {
     (function (controllers) {
         app_1.senthilchandran.register.controller("professionCtrl", ["$scope",
             function ($scope) {
-                $scope.title = "Profession";
             }
         ]);
     })(controllers = exports.controllers || (exports.controllers = {}));

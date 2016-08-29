@@ -32,27 +32,29 @@ code {
 .tac {
     text-align: center;
 }
-.bike {
+.section {
     min-height: 500px;
-    background-image: url("../content/BikeToWork2016.jpg");
     background-size: 100% 100%;
     background-color: transparent;
     display: table;
     padding: 0;
 }
-.bike-content {
+.section-content {
     display: table-cell;
     background: rgba(0, 0, 0, 0.6);
     color: #fff;
     padding: 50px;
 }
-.about-title {
+.section-title {
     text-align: center;
     padding-top: 50px;
 }
-.btn-about-me {
+.btn-section {
     margin-top: 40px;
     color: #000;
+}
+.bike {
+    background-image: url("../content/BikeToWork2016.jpg");
 }
 .about, .last-item {
     margin-bottom: 50px;
@@ -71,4 +73,17 @@ code {
     text-shadow: 0px 10px 10px;
     font-size: large;
     font-family: cursive;
+}
+.profession {
+    background-image: url("../content/me.jpg");
+}
+.miracle {
+    cursor: pointer;
+    font-style: oblique;
+    text-decoration: underline;
+}
+.miracle-close-top {
+    margin-top: -5px;
+    color: gray;
+    cursor: pointer;
 }
