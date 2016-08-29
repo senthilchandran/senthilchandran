@@ -87,3 +87,25 @@ code {
     color: gray;
     cursor: pointer;
 }
+.philanthropic {
+    background-image: url("../content/Give.jpg");
+}
+.philanthropic a {
+    height: 50px;
+}
+.philanthropic a:hover {
+    color: white;
+}
+.nh {
+    width: 100%;
+}
+.tsb {
+    width: 100%;
+    background-color: white;
+}
+.org-details {
+    margin-top: 15px;
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
