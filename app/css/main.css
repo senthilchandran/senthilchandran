@@ -112,7 +112,6 @@ code {
     background-color: white;
 }
 .org-details {
-    margin-top: 15px;
     cursor: pointer;
     color: white;
     text-decoration: underline;
@@ -124,4 +123,10 @@ code {
 }
 .contact-me:hover {
     color: white;
+}
+.m-t-5 {
+    margin-top: 5px;
+}
+.m-t-10 {
+    margin-top: 10px;
 }
