@@ -14,7 +14,7 @@ define(["require", "exports"], function (require, exports) {
         });
         return defer.promise;
     };
-    exports.senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvider", function ($routeProvider, $controllerProvider, $compileProvider) {
+    exports.senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvider", "$locationProvider", function ($routeProvider, $controllerProvider, $compileProvider, $locationProvider) {
             exports.senthilchandran.register = {
                 controller: $controllerProvider.register,
                 directive: $compileProvider.directive
@@ -41,6 +41,11 @@ define(["require", "exports"], function (require, exports) {
             }).
                 otherwise({
                 redirectTo: "/"
+            });
+            $locationProvider.html5Mode({
+                enabled: true,
+                requireBase: false,
+                rewriteLinks: true
             });
         }]);
     exports.senthilchandran.run(["$rootScope", "$window", function ($rootScope, $window) {

@@ -32,6 +32,10 @@ code {
 .tac {
     text-align: center;
 }
+.bottom-section {
+    background-color: black;
+    display: inline-block;
+}
 .section {
     min-height: 500px;
     background-size: 100% 100%;
@@ -56,7 +60,11 @@ code {
 .bike {
     background-image: url("../content/BikeToWork2016.jpg");
 }
-.about, .last-item {
+.about {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.about .last-item {
     margin-bottom: 50px;
 }
 .about img {
@@ -108,4 +116,12 @@ code {
     cursor: pointer;
     color: white;
     text-decoration: underline;
+}
+.contact-me {
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+.contact-me:hover {
+    color: white;
 }

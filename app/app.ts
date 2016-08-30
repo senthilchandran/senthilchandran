@@ -24,7 +24,7 @@ var loadDependencies = ($q, $rootScope, dependencies): any => {
     return defer.promise;
 };
 
-senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvider", ($routeProvider, $controllerProvider, $compileProvider) => {
+senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvider", "$locationProvider", ($routeProvider, $controllerProvider, $compileProvider, $locationProvider) => {
     senthilchandran.register = {
         controller: $controllerProvider.register,
         directive: $compileProvider.directive
@@ -54,8 +54,11 @@ senthilchandran.config(["$routeProvider", "$controllerProvider", "$compileProvid
             redirectTo: "/"
         });
 
-
-
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false,
+        rewriteLinks: true
+    });
 }]);
 
 senthilchandran.run(["$rootScope", "$window", ($rootScope, $window) => {

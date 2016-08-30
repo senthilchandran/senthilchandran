@@ -17,9 +17,8 @@ export module controllers {
                     id: 2
                 });
             
-            $scope.modalInstance = null;
             $scope.showMiracleModal = () => {
-                $scope.modalInstance = $uibModal.open({
+                $uibModal.open({
                     templateUrl: "/views/templates/miracle.html"
                 });
             }

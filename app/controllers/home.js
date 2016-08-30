@@ -15,9 +15,8 @@ define(["require", "exports", "../app"], function (require, exports, app_1) {
                     image: "http://www.senthilchandran.com/content/LakeLouise.jpg",
                     id: 2
                 });
-                $scope.modalInstance = null;
                 $scope.showMiracleModal = function () {
-                    $scope.modalInstance = $uibModal.open({
+                    $uibModal.open({
                         templateUrl: "/views/templates/miracle.html"
                     });
                 };

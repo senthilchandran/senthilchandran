@@ -1,48 +1,46 @@
-<div class="row">
-    <div>
-        <uib-carousel active="0" interval="3000" no-wrap="false">
-            <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
-                <img ng-src="{{slide.image}}" class="carousel-image">
-            </uib-slide>
-        </uib-carousel>
+<div>
+    <uib-carousel active="0" interval="3000" no-wrap="false">
+        <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+            <img ng-src="{{slide.image}}" class="carousel-image">
+        </uib-slide>
+    </uib-carousel>
+</div>
+<div class="bottom-section">
+    <div class="col-md-4 section bike">
+        <div class="section-content">
+            <h2 class="section-title">Hello!</h2>
+            <h4 class="p-t-20">Life on this beautiful earth is a gift! Storm Jameson's quote <span class="miracle" ng-click="showMiracleModal()">'Miracle'</span>, truly reflects my approach towards life.</h4>
+            <h4 class="p-t-20">I have immense passion for outdoors and people.</h4>
+            <div class="tac"><a class="btn btn-default btn-section" href="/about">More about me!</a></div>
+        </div>
     </div>
-    <div>
-        <div class="col-md-4 section bike">
-            <div class="section-content">
-                <h2 class="section-title">Hello!</h2>
-                <h4 class="p-t-20">Life on this beautiful earth is a gift! Storm Jameson's quote <span class="miracle" ng-click="showMiracleModal()">'Miracle'</span>, truly reflects my approach towards life.</h4>
-                <h4 class="p-t-20">I have immense passion for outdoors and people.</h4>
-                <div class="tac"><a class="btn btn-default btn-section" href="#/about">More about me!</a></div>
-            </div>
+    <div class="col-md-4 section profession">
+        <div class="section-content">
+            <h2 class="section-title">Profession</h2>
+            <h4 class="p-t-20">I am a Software Engineer by profession! Web development is my passion, but I have done full-stack development.</h4>
+            <h4 class="p-t-20">Love to learn new technology and establishing friendly working relationship with colleagues.</h4>
+            <div class="tac"><a class="btn btn-default btn-section"" href="/profession">Career</a></div>
         </div>
-        <div class="col-md-4 section profession">
-            <div class="section-content">
-                <h2 class="section-title">Profession</h2>
-                <h4 class="p-t-20">I am a Software Engineer by profession! Web development is my passion, but I have done full-stack development.</h4>
-                <h4 class="p-t-20">Love to learn new technology and establishing friendly working relationship with colleagues.</h4>
-                <div class="tac"><a class="btn btn-default btn-section"" href="#/profession">Career</a></div>
-            </div>
-        </div>
-        <div class="col-md-4 section philanthropic">
-            <div class="section-content">
-                <h2 class="section-title">Feeling philanthropic?!</h2>
-                <h4 class="p-t-20">'Neighborhood House' and 'The Service board' are two great organizations I have volunteered with and donated to. They both contribute significantly for the community.</h4>
-                <h4 class="p-t-20">If you feel passionate about their cause like I do, please feel free to contribute! To learn more about them</h4>
-                <h4 class="row">
-                    <a class="col-md-8" href="http://www.nhwa.org/index.php" target="_blank">
-                        <img class="nh" src="http://www.nhwa.org/images/logo_neighborhoodhouse.gif">
-                    </a>
-                    <a class="col-md-2 org-details" href="http://www.nhwa.org/lookinside/index.php" target="_blank">About</a>
-                    <a class="col-md-2 org-details" href="https://app.etapestry.com/hosted/NeighborhoodHouse/OnlineGivingCreditCard.html" target="_blank">Donate</a>
-                </h4>
-                <h4 class="row">
-                    <a class="col-md-8" href="http://www.theserviceboard.org" target="_blank">
-					    <img class="tsb" src="http://www.theserviceboard.org/wp-content/uploads/2014/05/tsb_yeti_logo_100h.png"> 
-				    </a>
-                    <a class="col-md-2 org-details" href="http://www.theserviceboard.org/about/" target="_blank">About</a>
-                    <a class="col-md-2 org-details" href="http://www.theserviceboard.org/donate/" target="_blank">Donate</a>
-                </h4>
-            </div>
+    </div>
+    <div class="col-md-4 section philanthropic">
+        <div class="section-content">
+            <h2 class="section-title">Feeling philanthropic?!</h2>
+            <h4 class="p-t-20">'Neighborhood House' and 'The Service Board' are two great organizations that I have volunteered with and donated to. They both contribute significantly to their community.</h4>
+            <h4 class="p-t-20">If you feel passionate about their cause like I do, please feel free to contribute! To learn more about them</h4>
+            <h4>
+                <a class="col-md-8" href="http://www.nhwa.org/index.php" target="_blank">
+                    <img class="nh" src="http://www.nhwa.org/images/logo_neighborhoodhouse.gif">
+                </a>
+                <a class="col-md-2 org-details" href="http://www.nhwa.org/lookinside/index.php" target="_blank">About</a>
+                <a class="col-md-2 org-details" href="https://app.etapestry.com/hosted/NeighborhoodHouse/OnlineGivingCreditCard.html" target="_blank">Donate</a>
+            </h4>
+            <h4>
+                <a class="col-md-8" href="http://www.theserviceboard.org" target="_blank">
+                    <img class="tsb" src="http://www.theserviceboard.org/wp-content/uploads/2014/05/tsb_yeti_logo_100h.png"> 
+                </a>
+                <a class="col-md-2 org-details" href="http://www.theserviceboard.org/about/" target="_blank">About</a>
+                <a class="col-md-2 org-details" href="http://www.theserviceboard.org/donate/" target="_blank">Donate</a>
+            </h4>
         </div>
     </div>
 </div>
